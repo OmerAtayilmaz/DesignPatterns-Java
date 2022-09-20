@@ -28,6 +28,12 @@ class App{
          * ThreadSafeSingleton Dezavantajı: threadin kullanılıp kullanılmadığını kontrol etmek için extra maliyet harcamaktadır.
         */
 
+        singleton.BillPughSingleton.getInstance().singletonTest();
+
+        /*
+         * load-time'dan kazandırır. thread-safe için sync yaparsak kazandırmaz :))
+         * inner class sayesinde iki taraflı erişimle INSTANCE oluştururuz.
+        */
     }
 
 }
