@@ -25,4 +25,12 @@ For Instance, PGSQL only accept 100 connection from "single" user. So
 how we can handle this problem? with Singletion.
 
 JVM içerisinde/RAM'de 1 instance ile bütün işimizi görme işlemi "Singleton Design Pattern" ile sağlanır.
-# 
+Oluşturulan instance heap memoryde kullanıma hazır halde bekler.
+
+## EagerInitialization Principle
+- disadvantage: you cannot use try-catch 
+- disadvantage: its create an instance automaticly, it doesn't matter you need or not!
+
+## StaticBlockSingleton
+
+- disadvantage: its creates an instance auto, wheather you need or not 
