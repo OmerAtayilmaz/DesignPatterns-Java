@@ -27,10 +27,16 @@ how we can handle this problem? with Singletion.
 JVM içerisinde/RAM'de 1 instance ile bütün işimizi görme işlemi "Singleton Design Pattern" ile sağlanır.
 Oluşturulan instance heap memoryde kullanıma hazır halde bekler.
 
-## EagerInitialization Principle
+## Eager Singleton
 - disadvantage: you cannot use try-catch 
 - disadvantage: its create an instance automaticly, it doesn't matter you need or not!
 
-## StaticBlockSingleton
-
+## StaticBlock Singleton
 - disadvantage: its creates an instance auto, wheather you need or not 
+
+
+## Lazy Singleton
+- disadvantage: the object which created is not "thread-safe". So 2 service/user can try to access at the same time and it might return exception.
+
+## Threadsafe singleton
+- disadvantage: while checking if the object is already using by someone/something, it costs extra expense.

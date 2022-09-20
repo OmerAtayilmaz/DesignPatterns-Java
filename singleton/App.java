@@ -11,11 +11,23 @@ class App{
         /*
          * Dezavantajı: her çalıştığında boşta bekleyen instancelerinin olmasıdır. Yani kullanılmasa bile instance oluşturulur.
         */
-        singleton.StaticBlockInitialization .getBlockInitialization().singletonTest();
+        singleton.StaticBlockInitialization.getBlockInitialization().singletonTest();
 
         /*
          * EagerInitialization & StaticBlockInitialization yöntemlerinin dez avantajı kullanılmasa bile heap'de hazır bekleyen instance oluşturmasıdır.
         */
+
+        singleton.LazySingleton.getLazySingleton().singletonTest();
+        /*
+         * LazySingleton Dezavantajı: LazySingleton threads safe degildir! 2 kişi/servis eşzamanlı bu nesneye erişmeye çalışırsa runtime exception vs. tarzı hata alırız
+         * 
+        */
+
+        singleton.ThreadSafeSingleton.getThreadSafeSingleton().singletonTest();
+        /*
+         * ThreadSafeSingleton Dezavantajı: threadin kullanılıp kullanılmadığını kontrol etmek için extra maliyet harcamaktadır.
+        */
+
     }
 
 }
