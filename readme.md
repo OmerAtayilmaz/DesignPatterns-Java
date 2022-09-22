@@ -49,3 +49,11 @@
 
 # Factory Design Pattern
 Yaptığımız abstractionun kullanımını diğer developerlar için daha kolay hale getirmek amacıyla kullanılır.
+
+Run.java'daki kodugumuzu incelediğimizde factory design pattern'in bize sağladığı avantajları şöyle sıralayabilriz;
+1-Bütün işlemleri tek bir "FileExporterFactory" gibi bir Classla halledebilmemize olanak sağladı.
+2-Bunu kullanan developerlar'ın instance oluşturup new'lemesine gerek kalmadı
+3-invalid parametre girişi engellendi.
+4-bütün işlemler static bir fonksiyon sayesinde chain edilip kullanıldı.
+5-ExcelExporter,PDFExporter public yapılmadı yani başka paketten import edildiğinde sadece FileExporterFactory'i kullanabilir.
+
