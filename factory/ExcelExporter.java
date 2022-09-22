@@ -1,4 +1,4 @@
-package factorydesignpattern.factory;
+package factory;
 
 class ExcelExporter implements FileExporter {
         

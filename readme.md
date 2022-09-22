@@ -57,3 +57,14 @@ Run.java'daki kodugumuzu incelediğimizde factory design pattern'in bize sağlad
 4-bütün işlemler static bir fonksiyon sayesinde chain edilip kullanıldı.
 5-ExcelExporter,PDFExporter public yapılmadı yani başka paketten import edildiğinde sadece FileExporterFactory'i kullanabilir.
 
+
+# Builder Design Pattern
+- Kod kalabalığını önler
+- Performansa ve zamandan kazanç gibi amacı yoktur - az da olsa etkisi olabilir :)) -
+- Lombok ile builder yapımı çok daha kolaylaşmıştır.
+- Senaryo üzerinen düşünmek gerekirse; 
+varsayalım ki 40 attributeye sahip bir objede 34 attribute girip kullanmak istiyoruz, nasıl bir yol izleyeceğiz?
+    - 34 parametreli constructor oluşturma !worst practice!
+    - set ile 34 parametre girmek !bad coding!
+    - Builder kullanımı :)) YESSS
+
