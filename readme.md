@@ -47,4 +47,5 @@
         - inner class sayesinde iki taraflı erişimle INSTANCE oluştururuz.
 
 
-# 
+# Factory Design Pattern
+Yaptığımız abstractionun kullanımını diğer developerlar için daha kolay hale getirmek amacıyla kullanılır.
