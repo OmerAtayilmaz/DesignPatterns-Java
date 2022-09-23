@@ -70,3 +70,10 @@ varsayalım ki 40 attributeye sahip bir objede 34 attribute girip kullanmak isti
 
 # Decorator design pattern
 - aynı kodu tekrar etmemek amacıyla kullanılır.
+- katmanlı şekilde birbirinin üzerine eklenen yapılarda kullanılabilir.
+
+
+# Facade design pattern 
+- Cephe anlamına gelen bu design patternin amacı geliştirilen bir yazılımın/ürünün son kullanıcıya ulaştığında detaylara boğulmadan sadece gereki detayları görmesini sağladığımız yapıdır.
+
+- Örneğin Driver, Encrypting gibi işlemlerin yapılması için birden fazla yöntem vardır bunları özet bir classa yazıp tek classla birden fazla Driver veya birden fazla encrpyting yönteminden istenilen kullanılabilir.
