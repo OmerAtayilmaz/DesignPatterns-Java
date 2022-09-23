@@ -68,3 +68,5 @@ varsayalım ki 40 attributeye sahip bir objede 34 attribute girip kullanmak isti
     - set ile 34 parametre girmek !bad coding!
     - Builder kullanımı :)) YESSS
 
+# Decorator design pattern
+- aynı kodu tekrar etmemek amacıyla kullanılır.
